@@ -6,7 +6,7 @@ const products = [
     description: "Series 5 SE",
   },
   {
-    id: 2,
+    id: 14,
     name: "Sony ZX330BT",
     price: 39.99,
     description: "Light Grey",
@@ -42,9 +42,9 @@ const products = [
     description: "Navy Blue",
   },
   {
-    id: 2.5,
+    id: 13,
     name: "Iphone 12",
-    price: 680.99,
+    price: 679.99,
     description: "Green",
   },
   {
