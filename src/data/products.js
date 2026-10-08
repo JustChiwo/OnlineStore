@@ -1,15 +1,17 @@
 const products = [
   {
     id: "1",
+    image: "/images/watch.jpg",
     name: "Apple Watch ",
     subtitle: "Series 5 SE",
-    color: "",
+    color: "", //no colour for this product (taken from figma as is)
     price: 529.99,
     description:
       "The Apple Watch keeps the most useful parts of your phone on your wrist. Check messages and calls at a glance, follow your daily activity and keep an eye on your heart rate without ever reaching into your pocket.\n\nBuilt for everyday life, it tracks workouts from a casual walk to a full run, gives gentle reminders to stand and move, and lasts through a full day on a single charge. A comfortable band and a clear, bright display make it easy to wear from morning to night.",
   },
   {
     id: "2",
+    image: "/images/headphones.jpg",
     name: "Sony ZX330BT",
     subtitle: "Light Grey",
     color: "Light Grey",
@@ -19,6 +21,7 @@ const products = [
   },
   {
     id: "3",
+    image: "/images/iphone-11-black.jpg",
     name: "Iphone 11",
     subtitle: "Serious Black",
     color: "Serious Black",
@@ -28,6 +31,7 @@ const products = [
   },
   {
     id: "4",
+    image: "/images/iphone-11-subway-blue.jpg",
     name: "Iphone 11",
     subtitle: "Subway Blue",
     color: "Subway Blue",
@@ -37,6 +41,7 @@ const products = [
   },
   {
     id: "5",
+    image: "/images/iphone-11-red.jpg",
     name: "Iphone 11",
     subtitle: "Product RED",
     color: "Product RED",
@@ -46,6 +51,7 @@ const products = [
   },
   {
     id: "6",
+    image: "/images/iphone-11-white.jpg",
     name: "Iphone 11",
     subtitle: "Milky White",
     color: "Milky White",
@@ -55,6 +61,7 @@ const products = [
   },
   {
     id: "7",
+    image: "/images/iphone-11-navy-blue.jpg",
     name: "Iphone 11",
     subtitle: "Navy Blue",
     color: "Navy Blue",
@@ -64,6 +71,7 @@ const products = [
   },
   {
     id: "8",
+    image: "/images/iphone-12-green.jpg",
     name: "Iphone 12",
     subtitle: "Green",
     color: "Green",
@@ -73,6 +81,7 @@ const products = [
   },
   {
     id: "9",
+    image: "/images/iphone-13-light-grey.jpg",
     name: "Iphone 13",
     subtitle: "Light Grey",
     color: "Light Grey",
@@ -82,6 +91,7 @@ const products = [
   },
   {
     id: "10",
+    image: "/images/iphone-13-pink.jpg",
     name: "Iphone 13",
     subtitle: "Pink",
     color: "Pink",
@@ -91,6 +101,7 @@ const products = [
   },
   {
     id: "11",
+    image: "/images/iphone-13-blue.jpg",
     name: "Iphone 13",
     subtitle: "Blue",
     color: "Blue",
@@ -100,6 +111,7 @@ const products = [
   },
   {
     id: "12",
+    image: "/images/iphone-14-light-grey.jpg",
     name: "Iphone 14",
     subtitle: "Light Grey",
     color: "Light Grey",
@@ -109,6 +121,7 @@ const products = [
   },
   {
     id: "13",
+    image: "/images/dell-xps-13-white.jpg",
     name: "Dell XPS 13",
     subtitle: "White",
     color: "White",
@@ -118,6 +131,7 @@ const products = [
   },
   {
     id: "14",
+    image: "/images/macbook.jpg",
     name: "Macbook",
     subtitle: "Navy Blue",
     color: "Navy Blue",
@@ -127,6 +141,7 @@ const products = [
   },
   {
     id: "15",
+    image: "/images/iphone-13-pro-blue.jpg",
     name: "Iphone 13 Pro",
     subtitle: "Blue",
     color: "Blue",
@@ -136,6 +151,7 @@ const products = [
   },
   {
     id: "16",
+    image: "/images/iphone-13-pro-grey.jpg",
     name: "Iphone 13 Pro",
     subtitle: "Space Grey",
     color: "Space Grey",
@@ -145,6 +161,7 @@ const products = [
   },
   {
     id: "17",
+    image: "/images/iphone-13-pro-white.jpg",
     name: "Iphone 13 Pro",
     subtitle: "Mineral White",
     color: "Mineral White",
@@ -154,6 +171,7 @@ const products = [
   },
   {
     id: "18",
+    image: "/images/samsung-s21-ultra.jpg",
     name: "Samsung Galaxy S21 Ultra",
     subtitle: "Phantom Gray",
     color: "Phantom Gray",
@@ -163,6 +181,7 @@ const products = [
   },
   {
     id: "19",
+    image: "/images/samsung-s21.jpg",
     name: "Samsung Galaxy S21",
     subtitle: "Blue",
     color: "Blue",
@@ -172,6 +191,7 @@ const products = [
   },
   {
     id: "20",
+    image: "/images/samsung-note21.jpg",
     name: "Samsung Note 21",
     subtitle: "Multicolor",
     color: "Multicolor",
@@ -181,6 +201,7 @@ const products = [
   },
   {
     id: "21",
+    image: "/images/dell-xps-15-black.jpg",
     name: "Dell XPS 15",
     subtitle: "Black",
     color: "Black",
@@ -190,6 +211,7 @@ const products = [
   },
   {
     id: "22",
+    image: "/images/dell-xps-13-black.jpg",
     name: "Dell XPS 13",
     subtitle: "Black",
     color: "Black",
