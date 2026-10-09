@@ -1,8 +1,9 @@
+import Sidebar from "../components/SideBar.jsx";
+import SearchBar from "../components/SearchBar.jsx";
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
-      <p>Welcome to the store</p>
+      <Sidebar />
     </div>
   );
 }
