@@ -5,6 +5,9 @@ import bagHandle from "../assets/bagHandle.svg";
 import logOut from "../assets/logOut.svg";
 import { Link } from "react-router-dom";
 
+
+
+
 function Sidebar() {
   return (
     <aside className="sidebar fixed inset-y-0 left-0 flex h-screen w-14 shrink-0 flex-col rounded-lg bg-white px-0 py-6">

@@ -1,4 +1,4 @@
-import Sidebar from "../components/sidebar.jsx";
+import Sidebar from "../components/SideBar.jsx";
 import SearchBar from "../components/SearchBar.jsx";
 function Home() {
   return (

@@ -3,7 +3,7 @@ import Home from "./pages/Home.jsx";
 import Cart from "./pages/CartPage.jsx";
 import Checkout from "./pages/CheckoutPage.jsx";
 import OrderSuccess from "./pages/OrderSuccessPage.jsx";
-import Products from "./pages/ProductPage.jsx";
+import ProductPage from "./pages/ProductPage.jsx";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/order-success" element={<OrderSuccess />} />
-      <Route path="/product/:id" element={<Products />} />
+      <Route path="/products/" element={<ProductPage />} />
     </Routes>
   );
 }

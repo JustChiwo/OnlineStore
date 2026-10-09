@@ -1,0 +1,178 @@
+
+.bag-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #fff;
+  color: #222;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.bag-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+}
+
+.bag-heading h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.bag-heading span {
+  color: #666;
+  font-size: 14px;
+}
+
+.bag-empty {
+  padding: 40px 10px;
+  text-align: center;
+  color: #666;
+}
+
+.bag-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.bag-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.bag-product-image {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background: #f6f6f6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bag-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bag-product-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.bag-product-details h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.bag-product-details p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.bag-quantity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.bag-quantity button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.bag-quantity button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.bag-remove,
+.bag-clear {
+  border: none;
+  background: transparent;
+  color: #b42318;
+  cursor: pointer;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.bag-line-total {
+  white-space: nowrap;
+}
+
+.bag-summary {
+  margin-top: 24px;
+}
+
+.bag-subtotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.bag-summary > p {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.bag-checkout {
+  width: 100%;
+  padding: 14px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bag-checkout:hover {
+  background: #444;
+}
+
+.bag-clear {
+  display: block;
+  margin: 16px auto 0;
+}
+
+@media (max-width: 500px) {
+  .bag-section {
+    padding: 16px;
+  }
+
+  .bag-item {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .bag-product-image {
+    width: 76px;
+    height: 76px;
+  }
+
+  .bag-product-details {
+    flex: 1;
+  }
+
+  .bag-line-total {
+    margin-left: auto;
+  }
+}
