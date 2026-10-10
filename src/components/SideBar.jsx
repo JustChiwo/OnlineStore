@@ -28,7 +28,7 @@ function Sidebar() {
           </li>
           <li className="w-full">
             <Link
-              to="/Products"
+              to="/products"
               aria-label="Store front"
               title="Store front"
               className="flex w-full justify-center rounded p-1 text-[#6154F0] focus-visible:outline-2"
