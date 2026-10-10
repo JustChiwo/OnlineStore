@@ -5,6 +5,8 @@ import Checkout from "./pages/CheckoutPage.jsx";
 import OrderSuccess from "./pages/OrderSuccessPage.jsx";
 import ProductPage from "./pages/ProductPage.jsx";
 import ItemOverviewPage from "./pages/ItemOverviewPage.jsx";
+import AddAddressPage from "./pages/AddAddressPage.jsx";
+import AddPaymentPage from "./pages/AddPaymentPage.jsx";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path="/order-success" element={<OrderSuccess />} />
       <Route path="/products" element={<ProductPage />} />
       <Route path="/product/:id" element={<ItemOverviewPage />} />
+      <Route path="/add-address" element={<AddAddressPage />} />
+      <Route path="/add-payment" element={<AddPaymentPage />} />
     </Routes>
   );
 }
