@@ -1,10 +1,11 @@
+import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import {
   increaseQuantity,
   decreaseQuantity,
   removeFromCart,
-} from "../slices/CartSlice.js";
+} from "../store/cartSlice.js";
 
 function CheckoutPage() {
   const dispatch = useDispatch();
@@ -241,13 +242,13 @@ function CheckoutPage() {
                                 onClick={() => {
                                   if (quantity > 1) {
                                     dispatch(
-                                      decrease_quantity(
+                                      decreaseQuantity(
                                         item.id ?? item.productId
                                       )
                                     );
                                   } else {
                                     dispatch(
-                                      remove_from_cart(
+                                      removeFromCart(
                                         item.id ?? item.productId
                                       )
                                     );
@@ -267,7 +268,7 @@ function CheckoutPage() {
                                 type="button"
                                 onClick={() =>
                                   dispatch(
-                                    increase_quantity(
+                                    increaseQuantity(
                                       item.id ?? item.productId
                                     )
                                   )
