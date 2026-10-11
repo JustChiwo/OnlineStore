@@ -11,7 +11,7 @@ function Home() {
     <div className="home-page min-h-screen bg-[#f5f6f4] text-[#171a16]">
       <Sidebar />
 
-      <main className="home-main mx-auto max-w-[1440px] px-5 pb-12 pt-7 sm:px-8 lg:px-12">
+      <main className="home-main mx-auto max-w-360 px-5 pb-12 pt-7 sm:px-8 lg:px-12">
         <header className="mb-8 flex flex-wrap items-center justify-between gap-4 border-b border-neutral-200 pb-6">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700">
@@ -30,7 +30,7 @@ function Home() {
         </header>
 
         {featuredProduct && (
-          <section className="home-hero relative grid overflow-hidden rounded-[28px] bg-[#e6ece7] shadow-sm md:min-h-[350px] md:grid-cols-[1.05fr_0.95fr]">
+          <section className="home-hero relative grid overflow-hidden rounded-[28px] bg-[#e6ece7] shadow-sm md:min-h-87.5 md:grid-cols-[1.05fr_0.95fr]">
             <div className="relative z-10 flex flex-col items-start justify-center px-7 py-10 sm:px-12 lg:px-16">
               <span className="home-featured-label rounded-full border border-emerald-900/10 bg-white/80 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-800">
                 This week’s pick
@@ -57,7 +57,7 @@ function Home() {
             <Link
               to={`/product/${featuredProduct.id}`}
               aria-label={`View ${featuredProduct.name}`}
-              className="home-hero-media relative flex h-64 items-center justify-center overflow-hidden bg-white/50 p-8 md:h-full md:min-h-[350px]"
+              className="home-hero-media relative flex h-64 items-center justify-center overflow-hidden bg-white/50 p-8 md:h-full md:min-h-87.5"
             >
               <div className="absolute h-56 w-56 rounded-full bg-white/60 blur-2xl sm:h-72 sm:w-72" />
               <img
