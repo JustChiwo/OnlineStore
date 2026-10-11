@@ -34,9 +34,20 @@ function CheckoutPage() {
   };
  });
 
-  const [paymentMethod] = useState({
-    card: "Mastercard ending in 1252",
-    giftCardBalance: 53.21,
+  const [paymentMethod] = useState(() => {
+    const savedPayment = sessionStorage.getItem("paymentMethod");
+
+    return savedPayment
+      ? {
+          card: `${savedPayment.paymentType} ending in ${savedPayment.lastFourDigits}`
+          giftCardBalance: 53.21,
+
+        }
+      : {
+          card: "Mastercard ending in 1252",
+          giftCardBalance: 53.21,
+      };
+
   });
 
   // Get a product's price, supporting common cart data structures.
