@@ -21,7 +21,7 @@ function ItemOverviewPage() {
 
   if (!product) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#dfe0e1] pl-20 text-lg text-neutral-700">
+      <div className="flex min-h-screen items-center justify-center bg-[#eeeeee] pl-20 text-lg text-neutral-700">
         <div className="rounded-2xl bg-white px-6 py-4 shadow-sm">
           Product not found.
         </div>
@@ -30,12 +30,12 @@ function ItemOverviewPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#dfe0e1] px-4 py-5 sm:px-5 lg:px-6">
+    <div className="min-h-screen bg-[#eeeeee] px-4 py-5 sm:px-5 lg:px-6">
       <Sidebar />
 
       <div className="ml-16 lg:ml-20">
         <div className="mx-auto flex max-w-[1600px] flex-col gap-3 md:flex-row">
-          <main className="min-w-0 flex-1 rounded-[18px] border border-neutral-200 bg-[#efefef] p-4 sm:p-6 lg:p-8">
+          <main className="min-w-0 flex-1 rounded-[18px]bg-[#efefef] p-4 sm:p-6 lg:p-8">
             <div className="mb-5 flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <Link
@@ -49,11 +49,11 @@ function ItemOverviewPage() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-[minmax(220px,0.85fr)_minmax(0,1.2fr)]">
-              <div className="rounded-2xl border border-neutral-200 bg-[#f4f4f4] p-5 shadow-sm">
+              <div className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-[280px] w-full object-contain lg:h-[340px]"
+                  className="h-70 w-full object-contain lg:h-85"
                 />
               </div>
 
