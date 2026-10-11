@@ -1,4 +1,4 @@
-import { Link, useAsyncValue } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart } from "../store/cartSlice.js";
 import { useEffect, useRef } from "react";

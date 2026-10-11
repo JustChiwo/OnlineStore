@@ -1,10 +1,10 @@
 import {useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
 
-function AddPayment() {
-    constnavigate = useNavigate();
+function AddPaymentPage() {
+    const navigate = useNavigate();
 
-    canost [payment, setPayment] = useState(() => {
+    const [payment, setPayment] = useState(() => {
         const savedPayment = sessionStorage.getItem("paymentMethod");
 
         return savedPayment
@@ -32,7 +32,7 @@ function AddPayment() {
     const digits = payment.cardNumber.replace(/\D/g,"");
 
     if (digits.length < 12 || digits.length> 19) {
-        alerts("Please enter a valid card number.");
+        alert("Please enter a valid card number.");
         return;
     }
 
@@ -51,7 +51,7 @@ function AddPayment() {
     };
 
     const inputClass =
-"w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-800 outline-none transition focus:border-[#6154F0] focus focus:ring-[#6154F0]/20";
+       "w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-800 outline-none transition focus:border-[#6154F0] focus:ring-2 focus:ring-[#6154F0]/20";
 
 const labelClass = "mb-2 block text-sm font-medium text-gray-700";
 
