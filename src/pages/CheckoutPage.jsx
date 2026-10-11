@@ -35,7 +35,7 @@ function CheckoutPage() {
  });
 
   const [paymentMethod] = useState(() => {
-    const savedPayment = sessionStorage.getItem("paymentMethod");
+    const savedPayment = JSON.parse(sessionStorage.getItem("paymentMethod"));
 
     return savedPayment
       ? {

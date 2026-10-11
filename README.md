@@ -29,7 +29,7 @@ There is no backend. All product data lives in the code and all state is handled
 
 ```bash
 # 1. Clone the repo
-git clone <repo-url>   <!-- CONFIRM: paste the GitHub repo URL -->
+git clone <https://github.com/JustChiwo/OnlineStore>   
 cd OnlineStore
 
 # 2. Install dependencies
@@ -83,7 +83,7 @@ src/
   App.jsx            Route list
   main.jsx           App entry: Router and Redux Provider
 ```
-<!-- CONFIRM: delete the empty folders src/app and src/slices if nothing is in them -->
+
 
 Naming rule: **a component's name matches its file name** (for example, `CartPage.jsx` contains `CartPage`).
 
@@ -127,7 +127,7 @@ Products live in `src/data/products.js`. Every product has the same fields:
 - [x] Home page
 - [x] Checkout forms and validation
 - [x] Order success page
-- [ ] Bag saved in localStorage
+- [x] Bag saved in localStorage
 - [x] Responsive layout check
 
 ---
@@ -141,6 +141,8 @@ Products live in `src/data/products.js`. Every product has the same fields:
 | **Tshehla** | Item view page |
 | **Bonolo** | Checkout forms |
 
-### How we work
-- Pull the latest `main` before you start work.
+### How we worked
+- Pull the latest `main` before we started coding.
+- Changes were done on separate branches and only merged once fully working
+- Minor debugging was done on the main branch and bigger fixes were done on separate branches which were merged once fully working
 - Prettier is set up in the repo. Install the **Prettier extension** in VS Code and turn on **format on save**.

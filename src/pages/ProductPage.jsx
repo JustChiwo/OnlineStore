@@ -1,15 +1,15 @@
 import { useMemo, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart, clearCart } from "../store/cartSlice.js";
+import { addToCart } from "../store/cartSlice.js";
 import products from "../data/products.js";
 import SearchBar from "../components/SearchBar.jsx";
 import SideBar from "../components/SideBar.jsx";
+import BagPanel from "../components/BagPanel.jsx";
 import "./ProductPage.css";
 
 function ProductPage() {
   const dispatch = useDispatch();
-  const cartItems = useSelector((state) => state.cart.items);
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredProducts = useMemo(() => {
@@ -22,11 +22,6 @@ function ProductPage() {
         .some((value) => value.toLowerCase().includes(search))
     );
   }, [searchTerm]);
-
-  const cartQuantity = cartItems.reduce(
-    (total, item) => total + item.quantity,
-    0
-  );
 
   return (
     <div className="product-page">
@@ -81,33 +76,7 @@ function ProductPage() {
         </section>
       </main>
 
-      <aside className="bag-panel" aria-label="Shopping bag">
-        <h1 className="bag-title">Bag</h1>
-        <div className="bag-items">
-          {cartItems.map((item) => (
-            <div className="bag-thumbnail" key={item.id}>
-              <img src={item.image} alt={item.name} />
-            </div>
-          ))}
-        </div>
-        <Link to="/cart" className="view-bag-button">
-          <span>View Bag</span>
-          {cartQuantity > 0 && (
-            <span className="bag-count" aria-label={`${cartQuantity} items`}>
-              {cartQuantity}
-            </span>
-          )}
-        </Link>
-        {cartItems.length > 0 && (
-          <button
-            type="button"
-            onClick={() => dispatch(clearCart())}
-            className="mt-3 w-full rounded-lg border border-red-700 px-3 py-2 text-sm font-medium text-red-700 transition hover:bg-red-700 hover:text-white"
-          >
-            Clear Cart
-          </button>
-        )}
-      </aside>
+      <BagPanel />
     </div>
   );
 }
