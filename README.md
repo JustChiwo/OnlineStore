@@ -125,8 +125,8 @@ Products live in `src/data/products.js`. Every product has the same fields:
 - [x] Bag side panel
 - [x] Bag page (change quantity, remove, clear)
 - [x] Home page
-- [ ] Checkout forms and validation
-- [ ] Order success page
+- [x] Checkout forms and validation
+- [x] Order success page
 - [ ] Bag saved in localStorage
 - [x] Responsive layout check
 
