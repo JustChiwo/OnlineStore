@@ -12,7 +12,7 @@ useEffect(() => {
 if (!orderProcessed.current) {
 orderProcessed.current = true;
 
-```
+
   if (cartItems.length > 0) {
     dispatch(clearCart());
   }
@@ -20,7 +20,7 @@ orderProcessed.current = true;
   sessionStorage.removeItem("shippingAddress");
   sessionStorage.removeItem("paymentMethod");
 }
-```
+
 
 }, [cartItems.length, dispatch]);
 
@@ -38,7 +38,7 @@ return ( <main className="flex min-h-screen items-center justify-center bg-[#eee
            d="m5 12 4 4L19 6"
          /> </svg> </div>
 
-```
+
     <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-green-600">
       Order Confirmed
     </p>
