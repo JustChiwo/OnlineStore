@@ -241,7 +241,6 @@ Back to Checkout </Link>
     </section>
   </div>
 </main>
-```
 
 );
 }
