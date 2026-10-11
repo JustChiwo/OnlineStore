@@ -1,6 +1,6 @@
 import Logo from "../assets/Logo.svg";
 import Menu from "../assets/menu.svg";
-import StoreFront from "../assets/storeFront.svg";
+import StoreFront from "../assets/storeFront-2.svg";
 import bagHandle from "../assets/bagHandle.svg";
 import logOut from "../assets/logOut.svg";
 import { Link } from "react-router-dom";
