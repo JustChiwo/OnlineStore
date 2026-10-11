@@ -158,7 +158,7 @@ function CheckoutPage() {
               <div className="space-y-4 text-sm text-gray-800">
                 <div className="flex items-center gap-3">
                   <span aria-hidden="true" className="text-lg">
-                    ▰
+                     ▰
                   </span>
                   <span>{paymentMethod.card}</span>
                 </div>
