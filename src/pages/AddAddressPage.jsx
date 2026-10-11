@@ -7,7 +7,7 @@ const navigate = useNavigate();
 const [address, setAddress] = useState(() => {
 const savedAddress = sessionStorage.getItem("shippingAddress");
 
-```
+
 return savedAddress
   ? JSON.parse(savedAddress)
   : {
@@ -20,30 +20,30 @@ return savedAddress
       country: "",
       phone: "",
     };
-```
+
 
 });
 
 const handleChange = (event) => {
 const { name, value } = event.target;
 
-```
+
 setAddress((previousAddress) => ({
   ...previousAddress,
   [name]: value,
 }));
-```
+
 
 };
 
 const handleSubmit = (event) => {
 event.preventDefault();
 
-```
+
 sessionStorage.setItem("shippingAddress", JSON.stringify(address));
 
 navigate("/checkout");
-```
+
 
 };
 
@@ -58,7 +58,7 @@ return ( <main className="min-h-screen bg-[#eeeeee] px-4 py-8 sm:px-8"> <div cla
      > <span aria-hidden="true">←</span>
 Back to Checkout </Link>
 
-```
+
     <section className="rounded-2xl bg-white p-5 shadow-sm sm:p-8">
       <div className="mb-8">
         <p className="mb-2 text-sm font-medium uppercase tracking-[0.2em] text-[#6154F0]">

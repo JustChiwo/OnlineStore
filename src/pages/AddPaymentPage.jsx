@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {Link, useNavigate} from "react-route-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 function AddPayment() {
     constnavigate = useNavigate();
