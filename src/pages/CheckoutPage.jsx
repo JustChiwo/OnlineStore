@@ -39,7 +39,7 @@ function CheckoutPage() {
 
     return savedPayment
       ? {
-          card: `${savedPayment.paymentType} ending in ${savedPayment.lastFourDigits}`
+          card: `${savedPayment.paymentType} ending in ${savedPayment.lastFourDigits}`,
           giftCardBalance: 53.21,
 
         }
