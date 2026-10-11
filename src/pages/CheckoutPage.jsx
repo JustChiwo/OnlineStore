@@ -130,6 +130,9 @@ function CheckoutPage() {
               <div className="space-y-1 text-sm leading-6 text-gray-800">
                 <p>{shippingAddress.name}</p>
                 <p>{shippingAddress.street}</p>
+                {shippingAddress.apartment && <p>{shippingAddress.apartment}</p>}
+                {shippingAddress.postalCode && <p>{shippingAddress.postalCode}</p>}
+                {shippingAddress.phone && <p>{shippingAddress.phone}</p>}
                 <p>
                   {shippingAddress.city}, {shippingAddress.province}
                 </p>
