@@ -17,13 +17,22 @@ function CheckoutPage() {
 
   // Customer details for the initial checkout layout.
   // We will connect these to the Add Address page next.
-  const [shippingAddress] = useState({
-    name: "John Maker",
-    street: "123 Plae Grond Street",
-    city: "Vermont",
+ const [shippingAddress] = useState(() => {
+  const savedAddress = sessionStorage.getItem("shippingAddress");
+
+  return savedAddress 
+  ? JSON.parse(savedAddress)
+  : {
+    name: "John Baker",
+    street: "123 Plant Grond Street",
+    apartment: "",
+    city: "Los Angeles",
     province: "California",
+    postalCode: "",
     country: "United States of America",
-  });
+    phone: "",
+  };
+ });
 
   const [paymentMethod] = useState({
     card: "Mastercard ending in 1252",
