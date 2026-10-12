@@ -15,7 +15,7 @@ function Home() {
         <header className="mb-8 flex flex-wrap items-center justify-between gap-4 border-b border-neutral-200 pb-6">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-700">
-              Designed For you
+              Nexus Tech Lab
             </p>
             <h1 className="mt-1 text-2xl font-semibold tracking-tight sm:text-3xl">
               Find your next favorite
